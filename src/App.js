@@ -1,26 +1,37 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, {Component} from "react";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  render() {
+    return (
+      <div>
+        <Header></Header>
+      </div>
+    );
+  }
 }
+
+class Header extends Component {
+  render() {
+    return (
+      <header>
+        <h1>My Contacts</h1>
+      </header>
+    );
+  }
+}
+
+// const App = () => {
+//   <div>
+//     <Header></Header>
+//   </div>
+// };
+
+// const Header = () => {
+//   <header>
+//     <h1>My Contacts</h1>
+//   </header>
+// };
+
+console.log("### working ? react-router-contact-list");
 
 export default App;
